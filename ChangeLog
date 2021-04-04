@@ -1,0 +1,14 @@
+2008-07-09  Heath Caldwell  <hncaldwell@csupomona.edu>
+
+	* 2 - Fixed crash when there is no input.
+
+2007-07-19  Heath Caldwell  <hncaldwell@csupomona.edu>
+
+	* 1 - Changed release number scheme to just incrementing numbers,
+	starting with 1.
+
+	* Moved strregtok function to util.c, removed strregtok.h and
+	strregtok.c.
+
+	* 0.1 - Initial release.
+

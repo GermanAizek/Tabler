@@ -1,0 +1,17 @@
+# $Id: configure.in 8 2008-07-10 02:12:49Z hnc $
+
+AC_INIT([tabler], [2], [Heath Caldwell <hncaldwell@csupomona.edu>])
+AM_INIT_AUTOMAKE
+
+AC_PROG_CC
+
+AC_HEADER_STDC
+
+AC_CHECK_LIB([c], [main], [], AC_MSG_ERROR(requires libc))
+AC_CHECK_LIB([m], [main], [], AC_MSG_ERROR(requires libm))
+AC_CHECK_FUNCS([regcomp regexec regerror], , AC_MSG_ERROR(regular expression functions are required))
+AC_CHECK_FUNC([floor], , AC_MSG_ERROR(floor is required))
+AC_CHECK_FUNC([log], , AC_MSG_ERROR(log is required))
+
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT

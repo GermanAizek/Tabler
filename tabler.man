@@ -1,0 +1,47 @@
+.TH TABLER 1 "JUNE 2007" tabler "User Commands"
+
+.SH NAME
+tabler \- Generates a table from delimited data.
+
+.SH SYNOPSIS
+.B tabler [-v] [-h] [-i] [-n] [-F 
+.I regex
+.B ] [-R 
+.I regex
+.B ] [-b 
+.I decorations
+.B ] [
+.I filename 
+.B ... ]
+
+.SH DESCRIPTION
+.B tabler
+is a program that generates nice looking text tables from delimited data.
+
+.SH OPTIONS
+.IP -v
+Print version information.
+.IP -h
+Print help.
+.IP -i
+Treat first record as a header.
+.IP -n
+No decorations.
+.IP "-F regex"
+Specify extended regular expression to use as field seperator.
+Default: `[ \\t]+'
+.IP "-R regex"
+Specify extended regular expression to use as record seperator.
+Default: `\\n'
+.IP "-b decorations"
+Table decorations, as a string of characters in the following order:
+top, top separator, top left, top right, bottom, bottom seperator,
+bottom left, bottom right, middle, middle seperator, middle left,
+middle right, left, right, separator.
+default:  ``-+++-+++-+++|||''.
+.IP "filename ..."
+The list of filenames will be used, in order, for input.
+If no filenames are mentioned, stdin will be used for input.
+
+.SH AUTHOR
+Heath Caldwell <hncaldwell@csupomona.edu>
