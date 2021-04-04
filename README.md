@@ -34,3 +34,7 @@ Run through `tabler -F '\t' -i`
 | Pipe         | Larger versions of macaroni      |              |
 +--------------+----------------------------------+--------------+
 ```
+
+## Authors
+
+Copyright © 2009 Heath Caldwell hncaldwell@csupomona.edu
